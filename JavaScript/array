@@ -1,0 +1,122 @@
+1.What is array in Js?
+-Array is a list of values. Whice is stored together in one place.
+-In JavaScript, an array lets you save multiple values using a single variable.
+-The value should be numbers, string, booloes and other array.
+
+*Updating and adding array:
+-You can change any value in an array by using its index.
+-You can also add a new value to the array by giving a value to a new index:
+
+2.Using a For-Of Loop (Important)
+JavaScript has a special loop made just for arrays. It is called the for-of loop.
+This loop does not need any index. It runs automatically for each item in the array.
+
+*Which One to Use?
+Use for in loop:
+-When you need the index (position number)
+Use for-of loop:
+-When you just need the values
+
+*Property: length
+The most commonly used property of an array is length. It tells us how many items are in the array.
+
+*Method: push()
+The push() method adds a new item at last in the array.
+
+*Method: pop()
+The pop() method removes the last item from the array.
+
+*Array Methods: foreach(), map(), filter()
+
+1.forEach()-When we want to do something in each item in that array. At that time we use forEach() method.
+-Its work like a loop.and access all the item inside the array.
+
+Code:-
+let fruits = ["apple", "banana", "mango"];
+
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+
+-forEach() — this is the higher order function, we are calling it using ().
+-function(fruit) { ... } — this nameless function is the callback function.
+-We are only defining it and passing it to forEach(). We do not call it. 
+-forEach() will internally call it for each item in the array.
+-forEach() will call the callback function once for each item in the array. 
+-If there are 3 items in the array, forEach() will call it 3 times once with each item.
+
+2.map()-The map() method is used to transform each item in an array.
+-(It's do the same operation with each item in that aaray.)
+-And return a new array of the same length.
+-Each time, the callback function receives one element from the array.
+-Applies some change to it, and returns the new value.
+
+Code:-
+let prices = [100, 200, 300];
+let newPrices = prices.map(function(price) {
+  return price + 50;
+});
+console.log(newPrices);
+
+-Map() also a high order function. 
+-Map will call internally each item in the array.
+
+3.filter()
+-The filter() method is used to remove items baced on the condition and return a smaller array.
+
+Code:-
+
+let numbers = [10, 25, 30, 15];
+#result is a callnack function 
+let result=function(num) {
+  return num > 20;
+}
+#bigNumber is a high order fuction
+let bigNumbers =numbers.filter(result)
+console.log(bigNumbers)
+
+3.What is Rest and Spread Operators?
+-In JavaScript, the same symbol ... is used for two different but related features:
+-Even though they look the same, they do opposite things. Let’s understand them one by one.
+
+*Rest Operator...
+-The rest operator is used to collect multiple values into a single array.
+-It is mostly used in function parameters to collect extra arguments passed to the function
+
+Code:-
+function printNames(...names) {
+  console.log(names);
+}
+
+printNames("Ali", "Sara", "Ravi");
+O/P-["Ali", "Sara", "Ravi"]
+
+*Spread Operator ...
+-The spread operator is used to spread out the elements of an array. 
+-It takes a group of values (like an array) and expands them into individual values.
+*It is mainly used in three ways:
+-Sending array elements as separate arguments to a function
+-Copying an array
+-Merging arrays
+*summery:-
+-The same ... behaves differently based on where it is used:
+-In function parameters → it’s a rest operator.
+-In function calls or array brackets → it’s a spread operator.
+-Think of rest as gathering things into a box, and spread as taking things out of a box.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

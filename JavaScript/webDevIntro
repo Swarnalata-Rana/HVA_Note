@@ -1,0 +1,74 @@
+1.What is Web Development?
+-Web Development means creating things that open in a browser.
+-Like www.google.com,in browser shows you a webpage. (like chrome or firefox)
+-That webpage was built by web developers using:HTML, CSS and Javascript.
+
+2.Web dev VS Mobile Development?
+-WebDev:open it in a browser.
+-Mobile:install it on your phone.
+
+3.Client and Server?
+-Server who provide the sevice.
+-Clint who uses that service.
+Exmple:
+-teacher server studens client
+-docter server patient client
+
+One server can provide service to many clients.
+
+4.What is Request?
+-A Request is when the client asks the server for something.
+-A request is always started by the client
+
+5.What is Processing?
+-Before giving a response, the server usually needs to process the request.
+-A server always processes the request before responding.
+
+6.What is a Response?
+-A Response is when the server sends back what the client asked for.
+-A response is always sent by the server.
+
+7.What is internet?
+-The Internet is a global network that connects computers and other devices around the world. 
+-It allows communicate with each other by sending and receiving information.
+
+8.What is an IP(internet protocol) Address?
+-An IP Address is a unique number which given to every device. 
+-When it connects to the internet or any network. 
+
+9.Web Server?
+-A web server is the computer/software that makes website files available.
+-Web servers are serve websites or web pages.
+-Place the website’s files (HTML, CSS, images, etc.) on that computer’s storage.
+-Install web server software on that computer.
+-Software that runs on a computer and makes the website files stored on that computer available online.
+
+10. Web Browser?
+-A web browser is the program/application that displays websites.
+-A Web Browser is software that people use to access and view websites.
+Examples include:
+-Google Chrome
+-Mozilla Firefox
+-Microsoft Edge
+-Safari
+-The client that opens and displays websites to users. 
+-Finds the right server using DNS(Domein Name System), and fetches the website files.
+-DNS helps find the IP address of a website.
+
+11. What is HTTP?
+-HTTP stands for Hypertext Transfer Protocol.
+-It defines how browsers and servers send and receive messages.(communticate each other)
+-Without HTTP, web server and web browser are not communication.
+
+HTTP Request and Response Example:-
+HTTP Request: “I want the file index.html.”
+HTTP Response: “Here is index.html, it is an HTML file, and it’s 14 KB in size.”
+
+
+
+
+
+
+
+
+

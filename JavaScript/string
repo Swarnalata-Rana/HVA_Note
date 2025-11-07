@@ -1,0 +1,119 @@
+1.What is a String?
+-String is a type of data in javascript.
+-And its trore to text.like letters, string, spaces and symbol.
+-String are written insite the quoteslike- " ", ' ', and ` `.
+-You must open and close with the same type of quote.
+
+2.Why do we use strings?
+-To show messages to the user.
+-To store names, places, or sentences.
+-To work with letters, words, or any written data.
+
+3.What is concatenation in string.
+-When we join or combine two or more string by using +operater. that is called concatenation.
+-Use + to combine two or more strings.
+-Add spaces manually where needed.
+-Works with variables and other values.
+
+4.What is template literals?Why use?
+-We already saw backticks ` ` used to create strings.
+-To easily insert variables or expressions inside strings.
+-To write multi-line strings.
+-(You can insert variables, expressions, or even function calls inside ${}.
+-Useful for cleaner, multi-line, and dynamic strings.)
+
+5.Looping Through a String?
+-Sometimes we want to look at each character in a string, one by one. We can do this using loops.
+
+*This is helpful when we want to:
+-Check or count each letter.
+-Find a specific character.
+-Change characters.
+-Combine characters in a new way.
+*summery
+-Use for or while loops to go through a string.
+-Use string[i] to get each character.
+-Loop until i < string.length.
+-You can read, check, and combine characters inside the loop.
+
+6.String properties.
+-.length is the main property of a string.
+-It gives the total number of characters.
+-It is read-only and cannot be changed.
+
+7.Common String Methods.
+-In JavaScript, a method is a built-in function you can use on a string.
+*String methods help us:
+-Change the text
+-Search inside a string
+-Cut or clean a string
+
+*Methods:-
+1-toUpperCase() – Make all letters big
+let word = "hello";
+console.log(word.toUpperCase());
+
+2-toLowerCase() – Make all letters small
+let name = "ALI";
+console.log(name.toLowerCase());
+
+3-trim() – Remove spaces from start and end
+let text = "  hello  ";
+console.log(text.trim()); 
+
+4-includes() – Check if one string is inside another if yes returm true else false.
+let sentence = "I like apples";
+console.log(sentence.includes("apple"));
+
+5-indexOf() – Find the position of a letter or word
+-Returns the index (number position) of the first match found. If not found, it returns -1.
+let str = "banana";
+console.log(str.indexOf("n"));
+
+6-slice() – Cut part of the string
+-Takes out a piece of the string from one index to another (end is not included).
+let word = "Elephant";
+console.log(word.slice(0, 3)); 
+
+7-replace() – Change part of a string   
+-Replaces the first match of a word with something else. Useful for editing messages.
+let msg = "I like tea";
+console.log(msg.replace("tea", "coffee")); 
+
+*summery
+-String methods help you change or check text.
+-Always use `()` after the method name.
+-They return a new string. (they do not change the original string)
+
+
+8.What does immutable mean?
+-In JavaScript, strings are immutable. That means you can't chenge the original string after it is create.
+-You cannot change a character inside a string.
+-You cannot add characters to the original string.
+-You can make a new string, but not change the old one.
+-Always create a new string if you need to change it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

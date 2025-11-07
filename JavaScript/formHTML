@@ -1,0 +1,132 @@
+1.What is Form?
+-A form is a part of a website where users can type in or select information like their name, email, or a message. 
+-It’s like a digital version of a paper form you fill out at a bank or doctor’s office.
+
+2.The action Attribute work?
+-The action attribute tells the browser where to send the form data. 
+-After the user clicks the submit button. 
+
+-<form action="/submit-form"></form>:The action and method attributes control how and where the data is sent.
+
+-<form action="#"></form>: By use # This will stop the form from doing anything when submitted.
+
+GET: Sends the data through the URL. 
+-This is useful for search forms. 
+-It is not secure, so don’t use it for passwords.
+
+POST: Sends the data in the background. 
+-This is more secure and better for sign-up or login forms.
+
+*Important Notes*
+-Always close the <form> tag properly.
+
+-All inputs must be inside the form tag.
+
+-The action and method attributes control how and where the data is sent.
+
+-The name attribute is required for each input.
+
+-Use label elements for better form accessibility.
+-------------------------
+*Dropdown Menus*
+-Use <select> and <option> to build dropdowns.
+
+-Label them with <label> and match for with id.
+
+-Use value to send form data.
+
+-Use selected to show a default choice.
+
+-Use <optgroup> to organize long lists.
+
+-Use required and placeholder options to guide the user.
+-------------------------------
+*Text Area for Larger Text Inputs*
+Textarea vs Input:-
+
+-<input type="text"> is for short single-line input.
+
+-<textarea> is for longer multi-line input.
+
+-Only <textarea> can show several lines at once.
+
+Summary:-
+-Use <textarea> for multi-line input.
+
+-Always use name to send data.
+
+-Pair with label using id and for.
+
+-Use placeholder to guide users.
+
+-Control size using rows, cols, or CSS.
+
+-Pre-fill text by adding it inside the tag.
+
+-Add required if the field must be filled.
+-------------------------
+*Submit Button*
+Summary:-
+Submit buttons send the form data to the server.
+
+Use <input type="submit"> or <button type="submit">.
+
+Must be placed inside the <form>.
+
+Can be styled with CSS.
+
+Can be triggered by the Enter key.
+
+You can have multiple buttons for different actions.
+---------------
+Three types of button:-
+-Button:-
+<button type="button">
+Just a normal button.
+Does nothing by itself.
+Usually used with JavaScript to perform custom actions.
+
+-Submit:-
+<button type="submit">
+Submits the form data to the server.
+Default type if inside a form.
+If no action is given in the <form>, the page just reloads.
+
+-Reset:-
+<button type="reset">
+Resets all form fields back to their default values. 
+(the values that were present when the page loaded).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

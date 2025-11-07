@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <div>
+        <button class="btn">Button One</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Two</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Three</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Four</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Five</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Six</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Seven</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Eight</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Nine</button>
+        <p>Waiting for click…</p>
+    </div>
+    <div>
+        <button class="btn">Button Ten</button>
+        <p>Waiting for click…</p>
+    </div>
+
+    <script>
+        let btn = document.getElementsByClassName("btn")
+
+        function clickBtn(event) {
+            let para = event.target.parentNode.querySelector('p')
+            para.innerText = "This button is clicked!"
+        }
+
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].addEventListener("click", clickBtn)
+        }
+    </script>
+</body>
+
+</html>

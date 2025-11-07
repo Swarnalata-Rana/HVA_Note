@@ -1,0 +1,124 @@
+1.What is HTML?
+-HTML stands for HyperText Markup Language.
+-It is a markup language used to create web pages.
+-HyperText: (like when you click on a link and it takes you to another page).
+-Markup: means we use special tags to tell the browser how to display the content.
+-Language: means HTML has its own rules and structure.  
+
+2.Why is HTML Important?
+- Its fundation of webside and without HTML we can't create a webpage.
+
+3. How HTML Works?
+-When you open a website:
+-The browser reads the HTML file.
+-It understands the tags and displays text, images, and links accordingly.
+(If CSS or JavaScript is included, it applies styling and adds functionality)
+------------------------
+<!DOCTYPE html>:-It tells the browser, "This is an HTML5 page. Use the modern rules to display it.
+<html>:-
+-This is the root tag. It wraps everything on the page.
+-All other tags go inside this tag.
+-If the <html> tag is missing, the browser will still try to guess—but this is a bad practice.
+<head>:This tag contains information about the page.
+It can include:
+-<title/>, <meta/>, Links to fonts, CSS stylesheets, favicon, etc.
+<title>:
+-The text inside this tag appears on the browser tab.
+-It helps users know what page they are on.
+<body/>:-This tag contains everything you want users to see on the page.
+--------------------------
+*Tags, Eliments and Attributes*
+4.What is Tags.
+-Tags are the building blocks of HTML. 
+-A tag tells the browser what type of content it is and how it should be displayed.
+
+5.What is an HTML Element?
+An element is made up of:-Opening tag, Content inside and Closing tag.
+
+*Types of Elements
+-There are two main types of elements in HTML:
+
+*Block Elements
+-Start on a new line
+-Take the full width of the page
+-Examples: <div>, <h1>, <p>, <ul>
+
+*Inline Elements
+-Stay in line with other content
+-Only take up as much space as needed baced on content
+-Examples: <span>, <a>, <strong>
+
+6.What is an Attribute?
+-Attributes always appear in the opening tag.
+-They come in name="value" format.
+-Example:-<a href="<https://google.com>">Go to Google</a>
+----------------------
+
+7.What are Self-Closing Tags?
+-In HTML, most elements have both an opening and a closing tag. 
+-But some tags do not need a closing tag. 
+-These are called self-closing tags.
+
+<br> — line break (moves text to a new line)
+
+<hr> — horizontal rule (adds a horizontal line)
+
+<img> — to display an image
+
+<input> — for input fields (text box, radio button, etc.)
+
+<meta> — for metadata (used in the <head>)
+
+<link> — to link CSS files to the page
+----------------------------------
+Text Format:-
+Use <b> for bold look, <strong> for bold with meaning.
+
+Use <i> for styling, <em> for emphasis.
+
+Use <u> to underline text.
+
+Use <mark> to highlight words.
+
+Use <small> for less important or extra information.
+
+Use <sub> for subscript, <sup> for superscript.
+--------------------------------------------
+Imege and Link:-
+-Use <img> to show pictures. Always add alt text.
+-Use <a> to create links. Use target="_blank" to open in new tab.
+-Combine <a> and <img> to create image links.
+
+---------------------------------------
+Table in HTML
+-<table> starts the table
+
+-<tr> is for rows
+
+-<th> is for headings (bold and centered)
+
+-<td> is for normal data
+
+-border, cellspacing, cellpadding, width, and height help with layout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

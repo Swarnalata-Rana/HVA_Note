@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+</head>
+
+<body>
+    <p id="p">Hello!</p>
+    <button id="btn">Change Message</button>
+
+
+    <script>
+
+        let greet = document.getElementById("p");
+        let btn = document.getElementById("btn");
+
+        function greeting() {
+            greet.innerText = "Welcome back!";
+
+        }
+
+        btn.addEventListener("click", greeting)
+
+    </script>
+</body>
+
+</html>

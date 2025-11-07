@@ -1,0 +1,141 @@
+1.What is Object?
+-Object is a container which is hold different kinds of item.
+-Like- strings, numbers, booleans, arrays, or even functions.
+-Object difine with a {} inside the {key:value}, This is called a key-value pair.
+-In object when a variable stores a function, we call it a method.
+-If it stores any other kind of value, we call it a property.
+-By use square brackets [] to access or change properties. 
+
+2.Dot Notation.
+- Using the dot . operator, you can reach inside the container and access its properties and methods.
+*Once you create an object,You can do this things:
+-Access existing values
+-Change those values
+-Add new properties or methods
+-Call methods
+Tips:
+-The dot operator is used to access the properties or methods inside an object.
+-When you see a dot in JavaScript, it usually means you are working with an object.
+- The variable before the dot is the object, and the part after the dot is either a property or a method.
+
+3.Objects using new Object()
+-new Object() always returns an empty object
+-You must add each property manually
+
+4.Objects Using Classes.
+-A class is like a blueprint or template. 
+-It defines what kind of properties and methods an object should have.
+-Once we have a class, we can use it to create many objects of the same type without repeating the structure.
+
+5.How to difice a class?
+-We use the class keyword to define a class. 
+-Inside the class, we write a special function called constructor() to set up the properties.
+
+*Code explain:-
+
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log("Hello, welcome!");
+  }
+}
+let student1 = new Student("Rahul", 20);
+
+-The new keyword is what creates a brand new empty object.
+-Then, it calls the constructor(name, age) method of the class.
+-The values "Rahul" and 20 are passed into the constructor.
+*So inside the constructor:
+-name holds "Rahul"
+-age holds 20
+-The this refers to the new object being created. It helps us add properties to that new object.
+
+*Code:this.name = name;
+-This creates a new property name inside the new object and stores the value "Rahul" in it.
+
+6.Why we use class?
+-Just imagine a scenario where we need to create objects with many properties and methods. 
+-Writing them again and again would be difficult and error-prone.
+*Benifits of using class:-
+-With a class, we define the structure once. 
+-Then, every time we create a new object using that class. 
+-All the properties and methods are automatically included. 
+-We just write one line and get a complete object.
+
+7.What is this keyword.
+-this is a keyword that refers to the current object.
+-either the one being created or the one calling the method.
+
+8.Using for-in Loop in Object.
+- for-in loop use to go through all the properties one by one.
+
+9.Bracket Notation.
+-We use bracket notation here because key is a variable. 
+-Dot notation (student.key) would look for a property actually named "key", which does not exis.
+
+10.Method Chaining.
+*Code:let r = a.b().c().d();
+-a is an object
+-b is a method inside an object a.
+-c is a method inside the object returned by b
+-d is a method inside the object returned by c
+(each method returned an object).
+-Method chaining works only when each method returns an object.
+
+11.What is Nested Objects?
+-In Javascrit a object not only hold numbers, or string  but also other objects.
+-Objec inside a object are called nested objects.
+
+Code:
+let student = {
+  name: "Rahul",
+  age: 20,
+  address: {
+    street: "MG Road",
+    city: "Mumbai"
+  }
+};
+console.log(student.address.street);
+-This is called deep property access. Each dot moves one level deeper inside the structure.
+
+12.Object References.
+-In JavaScript, objects are stored by reference, not by value.
+-This means that when we assign one object to another variable, we are not making a new copy of the object. 
+-We are just assigning a new name to the same object.
+
+Code:
+
+let student1 = {
+  name: "Rahul",
+  age: 20
+};
+let student2 = student1;
+student2.age = 21;
+console.log(student1.age);#21 is output
+
+13.New lear about how works key?
+-One key variable can work for many objects only if they share the same keys.
+Code:
+let obj1 = { a: 10, b: 20 };
+let obj2 = { a: 100, b: 200 };
+for (let key in obj) {
+  console.log("obj1:", obj1[key]);o/p-obj1: 10,obj2: 100
+  console.log("obj2:", obj2[key]);o/p-obj:20,obj:200
+
+}
+-If keys are different → undefined is returned for missing keys.
+Code:
+let obj = { a: 1, b: 2 };
+let obj1 = { d: 10, e: 20 };
+for (let key in obj) {
+  console.log("obj:", obj[key]); o/p-obj:1, obj1:2
+  console.log("obj1:", obj1[key]); o/p-undefined, obj:undefined
+}
+
+14.Falsy valu- NaN, 0, "", null, and undefined
+
+
+
