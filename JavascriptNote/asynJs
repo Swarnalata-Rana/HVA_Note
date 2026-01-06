@@ -1,0 +1,63 @@
+-Understanding Asynchronous JavaScript and the Event Loop
+-Js is a synchonus and single-threaded language.
+
+*Synchonus:-(bloking)
+--code run line by line
+--one line is compete then its go to the another line.
+
+*Asynchonus:-(non-bloking)
+--Asynchronous programming, it can start a task and move on. (without waiting aynithing.)
+--Then come back later when the task is done without freezing the whole program.
+
+*single-threaded:-
+--JavaScript is single-threaded — it can only do one thing at a time.
+
+*Event Loop:-
+--The Event Loop helps JavaScript look multitasking, 
+--even though it runs on a single thread.
+--It ensures that synchronous code runs first, 
+--and asynchronous callbacks run later when the stack is clear. 
+
+*What is Callbacks?
+-A callback function is that you pass into another function to be called later, that is called callback function.
+-A callback is a function passed into another function.
+-JavaScript uses callbacks heavily for asynchronous tasks.
+-Event listeners and timers use callbacks.
+-Callbacks let JavaScript say: “Do this later.”
+-Too many nested callbacks can lead to messy code — known as callback hell.
+-Promises and async/await help make this cleaner (coming soon!).
+
+*What is promise in Js?Why it use?
+-Promise is a type of object in javaScript. 
+-It represent a task that will finish in future successfully or with an Error.
+-It used because stop the callback hell.(callbacks insite the callbacks)
+
+*3 state in promise
+-Resolve, reject and panding
+
+*2 build-in method
+-then(callback) → you call this and pass a callback. The callback runs if the Promise is resolved.
+- catch(callback) → you call this and pass a callback. The callback runs if the Promise is rejected.
+You can use both like this:
+
+
+*Async/Await:-
+-Async makes a function and return a promise and
+-Await makes an async function and wait for a promise.
+
+-When we add async before a function, it means the function will always return a Promise.
+-By the using 2 keyword we can write Ascynchronus code in a synchronus maneer.
+
+
+
+----------------
+-JavaScript can run only one piece of work at a time.
+-Blocking happens when JavaScript is busy for a long time, so it cannot move to the next line of code.
+-Blocking happens when JavaScript is busy for a long time, so it cannot move to the next line of code.
+-JavaScript gives any waiting tasks to the helper and continues useful work.
+-A task is one full piece of work that JavaScript runs from start to end.
+
+
+
+
+

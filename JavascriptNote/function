@@ -1,0 +1,84 @@
+1.What is function?
+-A function is a named block of code.
+-When we called that function name then its run.
+2.Why?
+-To avoid repeating code(reuseble).
+-To make code easier to read and maintain.
+
+3.Every function in JavaScript has two main parts:-
+-Defining a function — describing what the function does.
+Code:
+function greet() {
+    console.log("Hello!");
+}
+-Calling a function — asking the function to run.
+Code:greet(); // Output: Hello!
+
+4.Return Ends the Function
+-Once JavaScript reaches a return statement, it immediately exits the function. 
+-Any code written after return inside the function will not run.
+
+5.Parameters vs Arguments.
+-When we define a function, we use parameter. (Like variables)
+-When we call the function, we provide arguments. (Like values)
+
+6.Variable Scope in Functions.
+-Scope is 2 types one is local and another is global.
+-Variables defined inside a function have local scope and cannot be used outside.
+-But variables defined outside a function have global scope and can be used inside (if needed).
+
+7.Anonymous Functions.
+-An anonymous function is a function without a name. For example:
+-We store it inside a variable.
+-Then we can call the function using that variable name.
+
+Code:
+let getGreeting = function() {
+    return "Hi there!";
+};
+
+// Now we can call the function using the variable name
+console.log(getGreeting());// Output: Hi there!
+
+-We created a function with no name.
+-We stored it inside a variable named getGreeting.
+-We then called the function using the variable name.
+
+8.Arrow Functions.
+-Arrow functions are a shorter and cleaner way to write in JavaScript.
+-In an arrow function, we remove the function keyword. 
+-And instead of that keyword we use the => arrow.
+
+Code:-
+let getGreeting = () => {
+    return "Hi there!";
+};
+
+9.Callback Functions and Higher Order Functions.
+-The callback function is independent. It has its own job to do.
+-The higher-order function depends on the callback to finish its work.
+
+function fun1(){
+    console.log("Hello Runu")
+}
+function fun2(){
+    console.log("I Love You!")
+}
+fun2(fun1())
+
+-fun2() high order function.
+-fun1() callback funcation.
+
+-A function whice is takes another function as a argument, that is called high order function.
+-(A callback function is a helper function that’s passed into another function.)
+-A function which is pass into a another function that is called callback function.
+
+
+
+
+
+
+
+
+
+
